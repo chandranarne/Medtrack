@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | MedTrack</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f4f9fd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #0077cc;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      height: 40px;
+      margin-right: 1rem;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .about-section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .about-section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #0077cc;
+    }
+
+    .about-section p {
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    .team-section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .team-section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+      color: #0077cc;
+      text-align: center;
+    }
+
+    .team-cards {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .team-card {
+      background-color: #f9fcff;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      width: 200px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .team-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-card img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 0.8rem;
+    }
+
+    .team-card h4 {
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .team-card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #e0e0e0;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><img src="https://img.icons8.com/ios-filled/50/ffffff/health-book.png" alt="Logo"> MedTrack</h1>
+    <nav>
+      <a href="/">Home</a> 
+      <a href="#team">Team</a>
+      <a href="/contactus">Contact</a>
+      <a href="/login">Login</a>
+    </nav>
+  </header>
+
+  <main class="about-section" id="about">
+    <h2>About Us</h2>
+    <p>
+      Welcome to <strong>MedTrack</strong>, your trusted partner in managing healthcare efficiently. 
+      Our platform is designed to streamline the connection between patients, doctors, and administrators 
+      by providing a centralized system to manage appointments, diagnoses, and medical history.
+    </p>
+    <p>
+      At MedTrack, we believe in empowering users with intuitive tools and secure access to critical 
+      health information. Whether you are a patient booking appointments, a doctor tracking diagnoses, 
+      or an admin managing operations, MedTrack simplifies your workflow.
+    </p>
+    <p>
+      Our mission is to make healthcare accessible, organized, and data-driven. With a focus on 
+      innovation, privacy, and user-friendliness, MedTrack aims to be the backbone of modern digital 
+      healthcare systems.
+    </p>
+  </main>
+
+  <section class="team-section" id="team">
+    <h3>Meet the Team</h3>
+    <div class="team-cards">
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Doe">
+        <h4>John Doe</h4>
+        <p>Lead Developer</p>
+      </div>
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Jane Smith">
+        <h4>Jane Smith</h4>
+        <p>UI/UX Designer</p>
+      </div>
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Sam Patel">
+        <h4>Sam Patel</h4>
+        <p>Database Architect</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MedTrack. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MedTrack - Your Medication Companion</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f4f8fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #0077cc;
+      padding: 20px 40px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 28px;
+      color: #fff;
+    }
+
+    nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px 60px;
+      background: linear-gradient(to right, #e0f7fa, #f9fbe7);
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      color: #004d99;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .hero a {
+      padding: 12px 25px;
+      background-color: #0077cc;
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    .hero a:hover {
+      background-color: #005fa3;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin: 60px auto;
+      max-width: 1000px;
+      padding: 20px;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 25px;
+      margin: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      flex: 1 1 280px;
+      transition: transform 0.2s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card h3 {
+      color: #0077cc;
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      color: #555;
+    }
+
+    footer {
+      background-color: #f0f0f0;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    
+    <h1>MedTrack</h1>
+    <nav>
+       <a href="/login">Login</a>
+       <a href="/signup">Signup</a>
+      <a href="/about">About Us</a>
+      <a href="/contactus">Contact Us</a>
+      <a href="/faq">FAQs</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Never Miss a Dose Again</h2>
+    <p>MedTrack helps you stay on top of your medications with timely reminders, easy scheduling, and smart tracking – all in one secure platform.</p>
+    <a href="/login">Get Started</a>
+  </section>
+
+  <section class="features">
+    <div class="feature-card">
+      <h3>Smart Reminders</h3>
+      <p>Receive notifications right when it's time to take your pills so you never miss a dose.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Easy Scheduling</h3>
+      <p>Plan your daily, weekly, or monthly medication routines effortlessly.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Secure & Private</h3>
+      <p>Your health data is protected using cloud encryption and secure access control.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 MedTrack. All rights reserved.
+  </footer>
+
+</body>
+</html>

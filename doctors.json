@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1750854999194,
+    "name": "Lakshmi Narne",
+    "specialization": "neurologist",
+    "license": "8555099449",
+    "experience": "15",
+    "hospital": "kanthama hospitals",
+    "email": "lakshmi@gmail.com",
+    "phone": "78938 04997",
+    "address": "Stambalagaruvu 2nd line",
+    "password": "$2b$10$RYggInUwbx6PHwyngdMZXOqjizGCQ.4VUIkoIhine9Kin05umhoQe",
+    "role": "doctor"
+  }
+]

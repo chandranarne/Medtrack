@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Patient Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    .profile {
+      font-weight: bold;
+      display: flex;
+      gap: 20px;
+    }
+
+    .container {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #4a90e2;
+    }
+
+    form, .chat-input {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    input, select, textarea, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #4a90e2;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #357ABD;
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+      padding: 0;
+    }
+
+    .chat-box {
+      height: 120px;
+      overflow-y: auto;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+
+    .chat-box p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 600px) {
+      header, .profile {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Patient Dashboard</h1>
+    <div class="profile">
+    <a href="patient-details.html" style="color: white; text-decoration: none; font-weight: bold;">👤 John Doe</a>
+      
+    </div>
+  </header>
+
+  <div class="container">
+    
+    <!-- Book Appointment -->
+    <div class="card">
+      <h2>Book Appointment</h2>
+      <form>
+        <label for="doctor">Doctor:</label>
+        <select id="doctor">
+          <option>Dr. Smith</option>
+          <option>Dr. Patel</option>
+          <option>Dr. Lee</option>
+        </select>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+
+        <label for="reason">Reason:</label>
+        <textarea id="reason" rows="3" placeholder="Enter reason..."></textarea>
+
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+
+    <!-- Past Doctors -->
+    <div class="card">
+      <h2>Past Consulted Doctors</h2>
+      <ul>
+        <li>Dr. Smith - 10 May 2025</li>
+        <li>Dr. Patel - 2 Apr 2025</li>
+      </ul>
+    </div>
+
+    <!-- Upcoming Appointments -->
+    <div class="card">
+      <h2>Upcoming Appointments</h2>
+      <ul>
+        <li>Dr. Lee - 25 June 2025 @ 10:00 AM</li>
+      </ul>
+    </div>
+
+    <!-- Medical Records -->
+    <div class="card">
+      <h2>Medical Records</h2>
+      <ul>
+        <li>Blood Report - 01 Mar 2025 <a href="#">📄</a></li>
+        <li>X-Ray - 15 Feb 2025 <a href="#">📄</a></li>
+      </ul>
+      <button>Upload New Record</button>
+    </div>
+
+    <!-- Chat with Doctor -->
+    <div class="card">
+      <h2>Chat with Doctor</h2>
+      <div class="chat-box">
+        <p><strong>Dr. Smith:</strong> Please follow up next week.</p>
+        <p><strong>You:</strong> Sure, Doctor!</p>
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Type your message..." />
+        <button>Send</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

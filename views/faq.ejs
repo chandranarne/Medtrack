@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FAQs | MedTrack</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f5f9fc;
+      color: #333;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #0077cc;
+      margin-bottom: 2rem;
+    }
+
+    .faq-container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .faq {
+      background: white;
+      margin-bottom: 1rem;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+
+    .faq h3 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-size: 1.1rem;
+      color: #0077cc;
+    }
+
+    .faq p {
+      display: none;
+      padding-top: 0.5rem;
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    .faq.active p {
+      display: block;
+    }
+
+    .faq-toggle {
+      font-size: 1.2rem;
+      color: #0077cc;
+      transition: transform 0.3s ease;
+    }
+
+    .faq.active .faq-toggle {
+      transform: rotate(45deg);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Frequently Asked Questions</h1>
+  <div class="faq-container">
+    <div class="faq">
+      <h3>What is MedTrack?
+        <span class="faq-toggle">+</span>
+      </h3>
+      <p>MedTrack is a healthcare management platform that connects patients, doctors, and administrators to streamline appointments, diagnoses, and communication.</p>
+    </div>
+
+    <div class="faq">
+      <h3>Is MedTrack free to use?
+        <span class="faq-toggle">+</span>
+      </h3>
+      <p>Yes, MedTrack offers a free basic version for individual users. Advanced features may be available in paid plans for clinics or hospitals.</p>
+    </div>
+
+    <div class="faq">
+      <h3>Can I book appointments online?
+        <span class="faq-toggle">+</span>
+      </h3>
+      <p>Absolutely. MedTrack allows patients to book, view, and manage their appointments with healthcare providers through an intuitive interface.</p>
+    </div>
+
+    <div class="faq">
+      <h3>Is my data safe on MedTrack?
+        <span class="faq-toggle">+</span>
+      </h3>
+      <p>Yes. We use secure encryption and follow healthcare compliance standards to protect your personal and medical data.</p>
+    </div>
+
+    <div class="faq">
+      <h3>How do I contact support?
+        <span class="faq-toggle">+</span>
+      </h3>
+      <p>You can reach out via the Contact page on our website or email us at support@medtrack.com. We’re here to help!</p>
+    </div>
+  </div>
+
+  <script>
+    const faqs = document.querySelectorAll('.faq');
+
+    faqs.forEach(faq => {
+      faq.querySelector('h3').addEventListener('click', () => {
+        faq.classList.toggle('active');
+      });
+    });
+  </script>
+  <!-- Fixed Back Button -->
+<button onclick="history.back()" id="backButton" title="Go Back">
+  &#8592;
+</button>
+
+<style>
+  #backButton {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: background-color 0.3s ease;
+  }
+
+  #backButton:hover {
+    background-color: #005fa3;
+  }
+
+  @media (max-width: 600px) {
+    #backButton {
+      top: 15px;
+      left: 15px;
+      width: 40px;
+      height: 40px;
+      font-size: 1.2rem;
+    }
+  }
+</style>
+
+
+</body>
+</html>
